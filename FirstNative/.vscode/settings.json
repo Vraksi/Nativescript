@@ -1,12 +1,12 @@
 {
     "NativescriptExtend.fileAssociations": [
         {
-            "systemId": "c:\\Users\\Jakob\\firstnativescript\\schema\\tns.xsd",
+            "systemId": "c:\\Users\\Jakob\\Documents\\Repos\\Nativescript\\FirstNative\\schema\\tns.xsd",
             "pattern": "**/**/*.xml"
         },
         {
             "systemId": "http://www.w3.org/2001/XMLSchema.xsd",
-            "pattern": "c:\\Users\\Jakob\\firstnativescript\\schema\\tns.xsd"
+            "pattern": "c:\\Users\\Jakob\\Documents\\Repos\\Nativescript\\FirstNative\\schema\\tns.xsd"
         }
     ],
     "files.exclude": {
