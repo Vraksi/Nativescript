@@ -2,6 +2,7 @@
 hooks/
 node_modules/
 platforms/
+!/MyVM1/
 
 # Logs
 logs
