@@ -1,0 +1,25 @@
+<!-- nummer 1
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="My App" icon="" />
+    <StackLayout class="p-20">
+        <Button id="btnTryk" text="tap" tap="{{ onHelper }}" class="-primary" />
+        <Label text="Tap the button" class="h1 text-center" />
+        <Button id="btnTryk" text="tap" tap="{{ onTap }}" class="-primary" />
+        <Label id="lblTo" text="{{ toHere }}" class="h2 text-center" textWrap="true" />
+        <text-field id="txtFrom" text="{{ fromHere }}" class="h2" />
+        
+    </StackLayout>
+</Page>
+-->
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Navigate Page" icon=""></ActionBar>
+    <GridLayout columns="*,    *" rows="2*,*,*,*, 6* " margin="20" padding="20" backgroundColor="lightgray">
+        <Label text="Main Page" row="0" col="0" colSpan="2" backgroundColor="lightblue" class="h1    text-center" />
+        <Label text="From Second:" row="1" col="0" class="h2    text-left" />
+        <Label id="txtFromSecond" row="1" col="1" class="h2    text-left" />
+        <Label text="To Second:" row="2" col="0" class="h2 text-left" />
+        <TextField id="txtWriteToSecond" row="2" col="1" class="h2 text-left" />
+        <Button text="Go to Second Page" row="3" col="0" colSpan="2" backgroundColor="lightgreen" tap="onGoSecond" class="h2 text-center"/>
+    </GridLayout>
+</Page>
