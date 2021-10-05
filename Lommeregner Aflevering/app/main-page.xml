@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Calculator" icon=""></ActionBar>
+    <GridLayout columns="*, *, *, *" rows="*,*,*,*,*,*,* " margin="20" padding="20" backgroundColor="lightgray">
+        <Label text="Main Page" row="0" col="0" colSpan="4" backgroundColor="lightblue" class="h1    text-center" />
+        
+        <Label text="First number:"  row="0" col="0" colSpan="4" class="h2 text-left" />
+        <Button text="Get First Number" tap="{{ Number1 }}" row="1" col="0" colSpan="4"/>
+        <Label id="firstnumber" text="{{ number1 }}" row="2" col="1" colSpan="2" class="h2 text-left" backgroundColor="red"/>
+
+        <Label text="To Second:" row="3" col="0" class="h2 text-left" />
+        <Button text="Get second Number" tap="{{ Number2 }}" row="3" col="0" colSpan="4"/>
+        <Label id="secondnumber" text="{{ number2 }}" row="4" col="1" colSpan="2" class="h2 text-left" backgroundColor="red" />
+
+        
+        <Button id="+" text="+" row="5" col="0" colSpan="1" backgroundColor="lightgreen" tap="Calculate" class="h2 text-center"/>
+        <Button id="-" text="-" row="5" col="1" colSpan="1" backgroundColor="lightgreen" tap="Calculate" class="h2 text-center"/>
+        <Button id="*" text="*" row="5" col="2" colSpan="1" backgroundColor="lightgreen" tap="Calculate" class="h2 text-center"/>
+        <Button id="/" text="/" row="5" col="3" colSpan="1" backgroundColor="lightgreen" tap="Calculate" class="h2 text-center"/>
+        <Label id="result" text="{{ result }}" row="7" col="0" colSpan="4" class="h2 text-center" backgroundColor="white"/>
+    </GridLayout>
+</Page>
