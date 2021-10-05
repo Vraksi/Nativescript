@@ -7,6 +7,5 @@
         <Button id="btnTryk3" text="TRYK PÅ MIG3" tap="onExTap" class="-primary"/>
         <Label id="txtShow" hint="tekst her" class="h2 text-center" textwrap="true"/>
         <TextField id="txtWrite" hint="skriv noget " class="h2"/>
-        
     </StackLayout>
 </Page>

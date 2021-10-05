@@ -8,18 +8,20 @@ var page: Page
 export function navigatingTo(args: NavigatedData) {
   page = <Page>args.object
 
-  if (!args.isBackNavigation) {
+  if (!args.isBackNavigation) 
+  {
     myData = new MyData()
   }
-  else {
+  else 
+  {
     var txtFromSecond: Label = page.getViewById("txtFromSecond")
     txtFromSecond.text = myData.backward
   }
 
-  /* nummer 1
+
   var obs = new MyObservable()
   page.bindingContext = obs;
-  
+
   obs.on(Observable.propertyChangeEvent, (event: PropertyChangeData) => 
   {
     if(event.propertyName == "helper" && event.value == 1)
@@ -30,7 +32,6 @@ export function navigatingTo(args: NavigatedData) {
     console.log(event.propertyName);
     console.log(event.value);
   })
-  */
 }
 
 export function onGoSecond(args: EventData) {
